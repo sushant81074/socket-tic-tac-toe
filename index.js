@@ -13,7 +13,9 @@ const io = new Server(server, {
 
 const players = {};
 const signs = {
-  x: false,
+  // id:s.id                   p[id]==s.id     s.id
+  // s.id : x     p[id] == sign[x]&& p[id]!= sid   then
+  x: false, //    x: p[id]
   o: false,
 };
 let currentPlayer = "x";
